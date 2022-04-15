@@ -13,7 +13,7 @@ router.post('/login', userController.loginUser);
 
 
 // Book routes
-router.post('/createLink',bookController.createFileLink)
+//router.post('/createLink',bookController.createFileLink)
 router.post('/books', mw.authMiddleware, bookController.createBook)
 router.get('/books', mw.authMiddleware, bookController.getAllBooks)
 router.get('/books/:bookId', mw.authMiddleware, bookController.getBookDetailsById)
